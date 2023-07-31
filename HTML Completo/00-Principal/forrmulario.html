@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    
+    <!-- PARA DEIXAR O USUARIO DIGITAR ALGO-->
+    <h1> Formulario</h1>
+
+
+    <!-- quando o submit for enviado, precisa definir onde será armazenado-->
+    <form action="Arquivo backend" method="get">
+        <!-- campo nome-->
+        <label for="CampoNome" >Nome: </label>
+        <input id="CampoNome" type="text" placeholder="Digite seu nome aqui" required> 
+        <br><br>
+
+        <!-- campo email-->
+        <label for="CampoEmail" >Email: </label>
+        <input id="CampoEmail" type="email" placeholder="Digite seu email" required> <!-- required - obrigatorio-->
+        <br><br>
+
+        <!-- campo senha-->
+        <label for="CampoSenha" >Senha: </label>
+        <input id="CampoSenha" type="password" placeholder="Digite sua senha" required>
+        <br><br>
+
+        <h2>Animais de estimação</h2>
+        <!-- Fomulario de selecao-->
+        <input type="radio" id="cat" name="animal" value="Gato">
+        <label for="cat">Gato</label>
+        <br><br>
+        
+        <input type="radio" id="dog" name="animal" value="Cao">
+        <label for="dog">Cachorro</label>
+        <br><br>
+        <!--
+            o formulario de selecao é composto por type radio, o name tem que ser todos iguais
+            O value é o que envia para o formulario
+        -->
+
+        <h2>O que voce tem em casa?</h2>
+        <!-- CHECKBOX-->
+        <input type="checkbox" type="checkbox" name="item1" value="TV">
+        <label for="item1">TV</label> <br> <br>
+
+        <input type="checkbox" type="checkbox" name="item2" value="PC">
+        <label for="PC">Computador</label> <br> <br>
+
+        <!-- Campo do tipo select-->
+        <h2>Escolha uma cor</h2>
+        <select name="SelectCor" id="SelCor"> 
+            <option selected disabled value="">Selecione uma cor</option> <!--- Deixando nome do campo--->
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+            <option value="preto">Preto</option> <!-- o valor enviado é o value-->
+        </select>
+
+        <!-- CAMPO DE TEXTO EM AREA-->
+        <h2>Digite sua Mensagem</h2>
+        <textarea name="mensagem" id="" cols="30" rows="10">
+
+        </textarea>
+
+        <!-- Botao submit-->
+        <br><br>
+        <input type="submit" value="Enviar Formulario"> <!-- enviar dados-->
+    </form><br>
+
+    <hr>
+    <a href="index.html">Voltar</a>
+
+</body>
+</html>
