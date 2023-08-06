@@ -71,3 +71,8 @@ p{
     text-align: justify;
     text-indent: 50px;
 }
+
+.botao-principal{
+    color: red;
+    border: 2px solid blue;
+}
